@@ -6,7 +6,7 @@
 body {
     display: flex;
     flex-direction: column;
-    gap: 20%;
+    
    align-items: center;
     height: 800px;
     background-color: rgb(207, 206, 128);
@@ -17,7 +17,7 @@ div {
    
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    
     width: 290px;
     height: 290px;
    
@@ -32,18 +32,25 @@ img {
     height: 65px;
 }
 .art1 {
-    width: 80%;
-    height: 290px;
-    background-color: rgba(255, 255, 255, 0.555);
-    border-radius: 25px;
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
+    align-items: center;
     border-radius: 25px;
+    gap: 5px;
 }
 
 .container {
-    
-    width: 100%;
+    display: grid;
+   grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.555);
+    border-radius: 25px;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .article {
     width: 65%;
@@ -62,6 +69,8 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+    font-size: 40px;
 }
 h1 a {
     background-color:rgba(255, 255, 255, 0);
@@ -69,4 +78,34 @@ h1 a {
     height: auto;
     text-decoration: none;
     color: black;
+}
+
+ul {display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+text-align: center;
+flex-wrap: wrap;
+list-style-type: none;
+background-color: white;
+padding: 10px;
+height: auto;
+width: 60%;
+border-radius: 25px;
+}
+
+.btn{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+    width: auto;
+}
+button{ 
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 25px;
+    background-color:white;
 }
