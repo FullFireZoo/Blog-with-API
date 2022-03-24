@@ -1,3 +1,9 @@
+const btn = document.querySelector('.valider');
+const titre = document.querySelector('#title');
+const contenu = document.querySelector('#contenu');
+
+console.log(btn, titre, contenu);
+
 function postfetch (title, content){
 
 let myHeaders = new Headers();
@@ -21,4 +27,10 @@ fetch("http://localhost:3000/Articles", requestOptions)
   .catch(error => console.log('error', error));
 };
 
-postfetch("don't worry", "be happy")
+btn.addEventListener("click", () => {
+  titre.value
+  contenu.value
+  console.log(titre.value );
+  console.log(contenu.value);
+  postfetch (titre.value, contenu.value)
+})
